@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: basic-pod
+  labels:
+    app: webserver
+    type: loadbalencer
+spec:
+  containers:
+  - name: basic-pod
+    image: nginx
+    ports:
+    - containerPort: 80

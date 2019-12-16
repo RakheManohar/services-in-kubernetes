@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service2
+spec:
+  selector:
+    app: application2
+  type: NodePort 
+  ports:
+  - port: 9090
+    nodePort: 30002
+    targetPort: 80
